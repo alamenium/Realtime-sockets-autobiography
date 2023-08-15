@@ -39,7 +39,7 @@ Alumi-Space is a personal project crafted by Youssif Ayman (Alamenium). While co
 
 ## Contact
 
-Feel free to reach out to Youssif Ayman via email at [your.email@example.com](mailto:your.email@example.com) for inquiries, feedback, or just to share your thoughts.
+Feel free to reach out to Youssif Ayman via email at [your.email@example.com](mailto:alamenium.inc@gmail.com) for inquiries, feedback, or just to share your thoughts.
 
 ---
 
