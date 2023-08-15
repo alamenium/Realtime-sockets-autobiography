@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alumi-Space</title>
+    <link rel="stylesheet" href="media/fonts/stylesheet.css">
+    <link rel="stylesheet" href="media/Styling/index.css">
+    <link rel="stylesheet" href="98/style.css">
+    <meta name="viewport" id="viewport" content="width=550, initial-scale=1,user-scalable=no">
+    <meta property="og:image" content="media/images/drawings/thumbanil.png">
+    <meta property="og:title" content="Alumi-Space">
+    <meta property="og:description" content="A throwback to the 90s">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+<script>
+    // Calculate the initial scale based on screen pixel width and 600
+    var screenWidth = window.screen.width;
+    var initialScale = screenWidth / 550;
+
+    // Set a minimum initial scale to avoid making content too small
+    if (initialScale < 0.5) {
+        initialScale = 0.5;
+    }
+
+    // Update the content of the viewport meta tag with the calculated initial scale
+    var viewportMetaTag = document.getElementById('viewport');
+    viewportMetaTag.setAttribute('content', 'width=550, user-scalable=no, initial-scale=' + initialScale);
+</script>
+
+
+<header>
+    <span class = "tab flexer">
+        <img src="media/images/icons/computer_win.png"/>
+        <h2>Alumi-Space</h2>
+    </span>
+
+</header>
+
+
+
+<main>
+    <div class="tab-offset"></div>
+    <div id="grid-container">
+        <div id="welcome" style="grid-area: b" class="window">
+            <div class="title-bar">
+
+                <div style="font-size: 1rem" class="title-bar-text">
+                    Welcome card
+                </div>
+
+                <div  class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+
+            </div>
+            <nav class="status-bar">
+                <p>File</p>
+                <p>View</p>
+                <p>Play</p>
+                <p>Favourites</p>
+                <p>Help</p>
+            </nav>
+
+            <h2 id="welcome-title">Hello and welcome to my website!</h2>
+            <img id="myIcon" src="media/images/drawings/pixelala.png"/>
+            <p>I am Youssif Ayman  (Aka Alamenium). I code some random things when i feel like it, You can read more about me here.</p>
+            <p>This is my personal website/blog, Have a look around!</p>
+            <div style="display: flex; margin-left: 1rem; ">
+                <img style="height: 2rem" src="media/images/icons/directory_open_file_mydocs_2k-0.png"/>
+                <p style="line-height: 1rem; margin-left: 0.5rem ">Some facts about me!</p>
+            </div>
+
+            <div class="window">
+                <p> ● Iam from Egypt (om el donya)</p>
+                <p> ● My favourite language is JavaScript</p>
+                <p> ● Full stack PERN developer</p>
+                <p> ● Iam a CpE student at Kuwait University</p>
+                <p> ● I love ducks</p>
+            </div>
+        </div>
+        <div class="window" id="messaging" style="grid-area: d">
+            <div class="flexer" style="justify-content: center">
+                <img style="width: 3rem; height: 3rem; margin: 0.5rem 0.5rem 1rem 0;" src="media/images/icons/channels-0.png"/>
+                <h3 style="margin: 0.5rem 0.5rem 1rem; text-align: center; line-height: 3rem; color: darkblue">Messaging</h3>
+
+                <img id="message-status" style="height: 1.2rem;  margin: 1.5rem 0.5rem 1.5rem 0.3rem;" src="media/images/drawings/disconnect.png"/>
+            </div>
+            <div id="messages" class="window">
+
+            </div>
+
+
+            <form id="message-form">
+                <div style="text-align:right">
+
+                    <input  id="username" type="text" placeholder="Username"/>
+                    <input  id="message" type="text" placeholder="Message"/>
+                    <input  id="send-message" type="submit" value="=>">
+
+                </div>
+            </form>
+        </div>
+        <div style="grid-area: x; image-rendering: pixelated;" class="window flexer">
+            <img style="margin: 5px; width: 40px" src="media/images/icons/user_computer_pair-1.png"/>
+            <p id="visit-counter-main" class ="counter-visits">Total visits: --</p>
+            <p id="online-count" class ="counter-visits">Online: -</p>
+        </div>
+
+        <div style="grid-area: a; " class="window" id="personal-tour">
+            <div class="title-bar">
+                <div class="title-bar-text">
+                    Tour Guide
+                </div>
+
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+
+            <div id="personal-tour-pre" class="window-body" style=" display: flex; flex-direction: column; justify-content: center; align-items: center; height: calc(100% - 2.5rem); transform: scale(1.4);">
+            <span class = "flexer">
+            <img style="margin: 1rem 0.5rem 1rem 0.5rem; width: 50px" src="media/images/icons/msg_question-0.png"/>
+            <p style="margin: 2rem 1.5rem">Start personal tour?</p>
+            </span>
+                <section class="field-row" style="justify-content: flex-end">
+                    <button disabled="true">Cancel</button>
+
+                    <button class="flexer" onclick="StartTour()">
+                        <img style="height: 1.8rem" src="media/images/icons/windows-0.png"/>
+                        <span>Start</span>
+                    </button>
+
+                </section>
+            </div>
+            <div id="tour">
+            <div style="width: 93%; margin: auto; overflow: hidden;" class="museum">
+                <!-- Your content goes here -->
+                <img style="height: 230px; width: auto" src="media/images/drawings/tour.png" alt="Image 1" />
+                <!-- Add more content here -->
+            </div>
+            <div id="museum-buttons">
+                <img style="height: 100px" id="backwardBtn" src="98/icon/button-left.png"/>
+                <img id="forwardBtn" src="98/icon/button-right.png"/>
+            </div>
+            </div>
+        </div>
+        <div style="grid-area: c;" class="window" id="canvas-container">
+            <div class="flexer" style="justify-content: center;">
+                <img style="width: 3rem; height: 3rem; margin: 0.5rem 0.5rem 1rem 0;" src="media/images/icons/msn3-3.png"/>
+                <h3 style="margin: 0.5rem 0.5rem 1rem; text-align: center; line-height: 3rem; color: darkblue">Global Art</h3>
+                <img id="draw-status" style="height: 1.2rem;  margin: 1.5rem 0.5rem 1.5rem 0.3rem;" src="media/images/drawings/disconnect.png"/>
+
+            </div>
+            <canvas id="canvas" style="grid-area: c"></canvas>
+            <div style="display: flex">
+                <button class="color-button" style="background-color: #000000" onclick="setColor('#000000')"></button>
+                <button class="color-button" style="background-color: #ff0000" onclick="setColor('#ff0000')"></button>
+                <button class="color-button" style="background-color: #00ff00" onclick="setColor('#00ff00')"></button>
+                <button class="color-button" style="background-color: #0000ff" onclick="setColor('#0000ff')"></button>
+                <button class="color-button" style="background-color: #ffff00" onclick="setColor('#ffff00')"></button>
+                <button class="color-button" style="background-color: #ff00ff" onclick="setColor('#ff00ff')"></button>
+                <button class="color-button" style="background-color: #00ffff" onclick="setColor('#00ffff')"></button>
+                <button class="color-button" style="background-color: #ffa500" onclick="setColor('#ffa500')"></button>
+                <button class="color-button" style="background-color: #ffffff" onclick="setColor('#ffffff')"></button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div id="shinji-container">
+        <img src="media/images/drawings/shinji.gif"/>
+    </div>
+
+    <div id="clippy-container">
+        <img src="media/images/drawings/clippy.png"/>
+    </div>
+</main>
+</body>
+<script src="personal-tour.js"></script>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="visits.js"></script>
+<script src="live-message.js"></script>
+<script src="live-draw.js" ></script>
+</html>
