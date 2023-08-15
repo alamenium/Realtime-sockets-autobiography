@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body style="background-color: black;">
+<h1 style="color: white; text-align: center; font-family: Tahoma">Ala-messaging</h1>
+<div id="messages">
+</div>
+<br>
+<form id="form">
+<div style="text-align:right">
+    <label for="message">Message: </label>
+    <input id="message" type="text"/>
+    <input id="send-message" type="submit" value="=>">
+    <br>
+    <label for="room">Room: </label>
+    <input id="room" type="text"/>
+    <button id="send-room" type="button">=></button>
+</div>
+</form>
+<script src="https://cdn.socket.io/4.6.0/socket.io.min.js" integrity="sha384-c79GN5VsunZvi+Q/WObgk2in0CbZsHnjEqvFxC5DxHn9lTfNce2WW6h2pH6u/kF+" crossorigin="anonymous"></script>
+<script src="/script.js" type="module"></script>
+</body>
+</html>
